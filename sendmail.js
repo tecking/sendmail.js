@@ -7,7 +7,7 @@
  */
 
 
-/*
+/**
  * 初期設定
  * @const {string} FORM_SHEET フォームの集計を記録するシート名
  * @const {Array.<string>} FORM_SHEET_COL_LABEL メール本文に値を挿入するフォームフィールド (=スプレッドシート上のカラム) 名
@@ -53,7 +53,7 @@ REPLY_MAIL_SENDER     = 'どこかの会社';
 REPLY_MAIL_FROM       = 'example@gmail.com';
 
 
-/*
+/**
  * メール送信
  * @return {undefined}
  */
@@ -111,7 +111,7 @@ function sendMail() {
 }
 
 
-/*
+/**
  * メール本文の生成
  * @param {Array.<string>} args フォームで送られたデータ
  * @param {string} status 生成するメール本文の種類
@@ -145,7 +145,7 @@ function genBody(args, status) {
 }
 
 
-/*
+/**
  * フォームで送られたデータを取得
  * @return {Array.<string>}
  */
@@ -178,7 +178,7 @@ function getValues() {
 }
 
 
-/*
+/**
  * エラー発生時に管理者にメール送信
  * @param {string} メール本文に挿入するエラーメッセージ
  * @return {undefined}
